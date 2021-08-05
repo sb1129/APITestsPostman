@@ -1,0 +1,786 @@
+{
+	"info": {
+		"_postman_id": "12fc0a0d-a4e8-4647-85e8-9a88336aeea2",
+		"name": "SmokeTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Vault Client Service Api",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Vault Client Service Api Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/vaultclient/api/HelperProperties/Configuration",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"vaultclient",
+						"api",
+						"HelperProperties",
+						"Configuration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Opportunities Sync",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Opportunities Sync Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/opportunitiessync/api/ConsolidationOpportunities/UpdateClosedWonOpportunities",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"opportunitiessync",
+						"api",
+						"ConsolidationOpportunities",
+						"UpdateClosedWonOpportunities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LGIA.Internal.Sonata.Helper.V2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"LGIA.Internal.Sonata.Helper.V2 Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/sonatahelper/Configuration?Authorization={{AuthKey}}",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"sonatahelper",
+						"Configuration"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "{{AuthKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LGIA.Internal.SonataEvents.Helper",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"LGIA.Internal.SonataEvents.Helper Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/sonataeventshelper/Configuration?Authorization={{AuthKey}}",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"sonataeventshelper",
+						"Configuration"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "{{AuthKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LGIA.Internal.SForceCampaign.Helper",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"LGIA.Internal.SForceCampaign.Helper Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/sforcecampaign/Configuration?Authorization={{AuthKey}}",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"sforcecampaign",
+						"Configuration"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "{{AuthKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LGIA.Internal.Heroku.Salesforce",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"LGIA.Internal.Heroku.Salesforce Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/herokusalesforce/Configuration?Authorization={{AuthKey}}",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"herokusalesforce",
+						"Configuration"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "{{AuthKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LGIA.Internal.ePass.Helper",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"LGIA.Internal.ePass.Helper Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/epasshelper/DumpAcc?Authorization={{AuthKey}}",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"epasshelper",
+						"DumpAcc"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "{{AuthKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LGIA.External.Tal.Helper",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"LGIA.External.Tal.Helper Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/moltalexternal/Configuration?Authorization={{AuthKey}}",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"moltalexternal",
+						"Configuration"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "{{AuthKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Heroku Data Sync",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Heroku Data Sync Health Check\", () => {",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{AuthKey}}",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fields\": [\r\n    \"account_id__c\",\r\n    \"Consolidate_My_Super_Eligibility_Date__c\"\r\n  ],\r\n  \"procedureName\": \"[dbo].[uspConsolidationJourney]\",\r\n  \"procedureExecutionTimeoutSeconds\": 60,\r\n  \"herokuTargetDataSet\": \"product__c\",\r\n  \"sourceDatabase\": \"ODS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/herokudatasync/api/ToHerokuConnect/Update",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"herokudatasync",
+						"api",
+						"ToHerokuConnect",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pmif Def Insurance Values API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Get Pmif Def Insurance Values API Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/GetPmifDefaultInsuranceValues/api/HelperProperties/Configuration",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"GetPmifDefaultInsuranceValues",
+						"api",
+						"HelperProperties",
+						"Configuration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "File Conversion",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"File Conversion Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/fileconversion/api/NasFile/ListInFiles",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"fileconversion",
+						"api",
+						"NasFile",
+						"ListInFiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Einstein Analytics Data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"EinsteinAnalyticsData Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/einsteinanalytics/api/HelperProperties/Configuration",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"einsteinanalytics",
+						"api",
+						"HelperProperties",
+						"Configuration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CCM API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"CCMAPI Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/ccm/api/HelperProperties/Configuration",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"ccm",
+						"api",
+						"HelperProperties",
+						"Configuration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication Service ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"AuthenticationService Health Check\", () => {",
+							"    pm.response.to.not.have.status(404);",
+							"    pm.response.to.not.have.status(503);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://intg-mcro.internal.lgsuper.org/authentication/api/HelperProperties/Configuration?x-microservice=Security",
+					"protocol": "https",
+					"host": [
+						"intg-mcro",
+						"internal",
+						"lgsuper",
+						"org"
+					],
+					"path": [
+						"authentication",
+						"api",
+						"HelperProperties",
+						"Configuration"
+					],
+					"query": [
+						{
+							"key": "x-microservice",
+							"value": "Security"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{TestAutomation}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "TestAutomation",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

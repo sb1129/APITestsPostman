@@ -1,0 +1,104 @@
+{
+	"id": "00a98a20-0bb2-4b24-905e-a9cf2e1c1167",
+	"name": "intg",
+	"values": [
+		{
+			"key": "einsteinanalyticsdata",
+			"value": "https://intg-mcro.internal.lgsuper.org/einsteinanalytics",
+			"enabled": true
+		},
+		{
+			"key": "fileconversion",
+			"value": "https://intg-mcro.internal.lgsuper.org/fileconversion",
+			"enabled": true
+		},
+		{
+			"key": "LockedUser",
+			"value": "TestLockedUser",
+			"enabled": true
+		},
+		{
+			"key": "LockedPassword",
+			"value": "shfq6-WNdzdnWseK",
+			"enabled": true
+		},
+		{
+			"key": "NewUser",
+			"value": "TestNewUser",
+			"enabled": true
+		},
+		{
+			"key": "NewPassword",
+			"value": "btsWeW$zMmhJIjy",
+			"enabled": true
+		},
+		{
+			"key": "NoRolesUser",
+			"value": "TestNoRolesUser",
+			"enabled": true
+		},
+		{
+			"key": "NoRolesPassword",
+			"value": "paKAxSI7FAoO52U",
+			"enabled": true
+		},
+		{
+			"key": "randomId",
+			"value": "UTy3VU",
+			"enabled": true
+		},
+		{
+			"key": "FundName",
+			"value": "This is a new fund name for UTy3VU",
+			"enabled": true
+		},
+		{
+			"key": "SFToken",
+			"value": "00D1m0000008lFX!ARcAQDCdBUCN1z27ixKDs2.IVaT8TQtNqHa9PNE1HLyjsl8Xgx1Vd7apCciBpe517mK1gW.Tpsvb2kmSBlodoEnjn0p0YJKZ",
+			"enabled": true
+		},
+		{
+			"key": "ccm",
+			"value": "https://intg-mcro.internal.lgsuper.org/ccm",
+			"enabled": true
+		},
+		{
+			"key": "TestAutomation",
+			"value": "b-VBed!By7suveYBbaL",
+			"enabled": true
+		},
+		{
+			"key": "swift",
+			"value": "https://intg-mcro.internal.lgsuper.org/swift",
+			"enabled": true
+		},
+		{
+			"key": "AuthKey",
+			"value": "VGVzdEF1dG9tYXRpb246Yi1WQmVkIUJ5N3N1dmVZQmJhTA==",
+			"enabled": true
+		},
+		{
+			"key": "ringcentral",
+			"value": "https://intg-mcro.internal.lgsuper.org/ringcentral",
+			"enabled": true
+		},
+		{
+			"key": "LGIA.Internal.Sonata.Helper.V2",
+			"value": "https://intg-mcro.internal.lgsuper.org/sonatahelper",
+			"enabled": true
+		},
+		{
+			"key": "GetPmifDefaultInsuranceValues",
+			"value": "https://intg-mcro.internal.lgsuper.org/GetPmifDefaultInsuranceValues",
+			"enabled": true
+		},
+		{
+			"key": "vaultclient",
+			"value": "https://intg-mcro.internal.lgsuper.org/vaultclient",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-07-27T05:09:22.648Z",
+	"_postman_exported_using": "Postman/8.9.0"
+}
